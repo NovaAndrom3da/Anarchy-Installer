@@ -8,6 +8,7 @@
 
 # Starts on bootup
 start_menu() {
+  op_title="${welcome_op_msg}"
   # Only run if the start menu hasn't been run already
   if [ ! -f /root/.anarchy_updated ]; then
     dialog --clear \
