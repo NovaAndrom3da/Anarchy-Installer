@@ -6,6 +6,7 @@
 
 check_connection
 
+op_title="${welcome_op_msg}"
 tmp_dir="$(mktemp -d)"
 
 log 'Updating Anarchy scripts'
