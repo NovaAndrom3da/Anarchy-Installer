@@ -157,7 +157,6 @@ prepare_base() {
       "bash" "${shell5}" \
       "dash" "${shell0}" \
       "fish" "${shell1}" \
-      "mksh" "${shell2}" \
       "tcsh" "${shell3}" \
       "zsh" "${shell4}" 3>&1 1>&2 2>&3)
     if [ "$?" -gt "0" ]; then

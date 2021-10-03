@@ -277,9 +277,6 @@ configure_system() {
   elif [ "${shell}" == "tcsh" ]; then
     cp "${anarchy_directory}"/extra/{.tcshrc,.tcshrc.conf} "${ARCH}"/root/
     cp "${anarchy_directory}"/extra/{.tcshrc,.tcshrc.conf} "${ARCH}"/etc/skel/
-  elif [ "${shell}" == "mksh" ]; then
-    cp "${anarchy_directory}"/extra/.mkshrc "${ARCH}"/root/
-    cp "${anarchy_directory}"/extra/.mkshrc "${ARCH}"/etc/skel/
   fi
 
   cp "${anarchy_directory}"/extra/.bashrc-root "${ARCH}"/root/.bashrc
