@@ -2,10 +2,10 @@
 # shellcheck disable=SC2034
 
 iso_name="anarchy"
-iso_label="ANARCHY134beta1"
+iso_label="ANARCHY134"
 iso_publisher="Anarchy Installer <https://anarchyinstaller.gitlab.io>"
 iso_application="Anarchy Installer"
-iso_version="1.3.4.beta1"
+iso_version="1.3.4"
 install_dir="anarchy"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
