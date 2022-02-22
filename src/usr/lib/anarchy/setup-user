@@ -164,7 +164,7 @@ set_user() {
 
           if "${menu_enter}"; then
             (
-              sed -i '/%wheel ALL=(ALL) ALL/s/^#//' "${ARCH}"/etc/sudoers
+              sed -i '/%wheel ALL=(ALL:ALL) ALL/s/^#//' "${ARCH}"/etc/sudoers
               arch-chroot "${ARCH}" usermod -a -G wheel "${user}"
             ) &>/dev/null &
             pid=$! pri=0.1 msg="${wait_load} \n\n \Z1> \Z2usermod -a -G wheel ${user}\Zn" load
@@ -278,7 +278,7 @@ add_user() {
 
     if [ "${sudo_user}" == "yes" ]; then
       (
-        sed -i '/%wheel ALL=(ALL) ALL/s/^#//'" ${ARCH}"/etc/sudoers
+        sed -i '/%wheel ALL=(ALL:ALL) ALL/s/^#//'" ${ARCH}"/etc/sudoers
         arch-chroot "${ARCH}" usermod -a -G wheel "${user}"
       ) &>/dev/null &
       pid=$! pri=0.1 msg="${wait_load} \n\n \Z1> \Z2usermod -a -G wheel ${user}\Zn" load
@@ -300,7 +300,7 @@ add_user() {
 
       if [ "$(cut <<<"${i}" -d: -f3)" == "yes" ]; then
         (
-          sed -i '/%wheel ALL=(ALL) ALL/s/^#//' "${ARCH}"/etc/sudoers
+          sed -i '/%wheel ALL=(ALL:ALL) ALL/s/^#//' "${ARCH}"/etc/sudoers
           arch-chroot "${ARCH}" usermod -a -G wheel "$(cut <<<"${i}" -d: -f1)"
         ) &>/dev/null &
         pid=$! pri=0.1 msg="${wait_load} \n\n \Z1> \Z2usermod -a -G wheel $(cut <<<"${i}" -d: -f1)\Zn" load
