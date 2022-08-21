@@ -3,6 +3,16 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-67-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+# Deprecated project
+
+**Unfortunately, it is time to put an end to the project. It was several years being one of the maintainers of Anarchy and in which time I tried to bring more stability and new improvements to it. But it is also true that Arch Linux (and particularly archiso) development is in constant motion, which forces independent installer developers to keep up with all the changes and never fall behind. Personally, I don't have time for that and I don't want to fail the community by pretending to be the maintainer of a project that I haven't spent time on for a long time.**
+
+**However, I do not disappear. I am developing an installer that takes many features from Anarchy, as well as from other installers like Manjaro Architect or Anaconda. For now it's a personal project, which advances at the pace I want to give it. You are invited.**
+
+**That's why I'm not saying goodbye, but see you soon.**
+
+**Panda Foss**
+
 # About
 
 Anarchy is a simple and intuitive Terminal based (TUI) [Arch Linux](https://archlinux.org) installer.
