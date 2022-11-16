@@ -3,15 +3,25 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-67-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-# Deprecated project
+# Revived project
 
-**Unfortunately, it is time to put an end to the project. It was several years being one of the maintainers of Anarchy and in which time I tried to bring more stability and new improvements to it. But it is also true that Arch Linux (and particularly archiso) development is in constant motion, which forces independent installer developers to keep up with all the changes and never fall behind. Personally, I don't have time for that and I don't want to fail the community by pretending to be the maintainer of a project that I haven't spent time on for a long time.**
+<s>**Unfortunately, it is time to put an end to the project. It was several years being one of the maintainers of Anarchy and in which time I tried to bring more stability and new improvements to it. But it is also true that Arch Linux (and particularly archiso) development is in constant motion, which forces independent installer developers to keep up with all the changes and never fall behind. Personally, I don't have time for that and I don't want to fail the community by pretending to be the maintainer of a project that I haven't spent time on for a long time.**
 
 **However, I do not disappear. I am developing an installer that takes many features from Anarchy, as well as from other installers like Manjaro Architect or Anaconda. For now it's a personal project, which advances at the pace I want to give it. You are invited.**
 
 **That's why I'm not saying goodbye, but see you soon.**
 
-**Panda Foss**
+**Panda Foss**</s>
+
+Hello! I am working on some **big** updates! This is a fork of the original anarchy installer, but will include various other features (to come). There are several ideas for this software I have gained after using it for the last several months, such as automatically updating pacman's (the package manager's) GPG keys, which I have seen many issues on the original GitLab repository related to it. One simple fix I have been using has been dropping to the terminal, and running this:
+```bash
+nmtui; timedatectl set-ntp true; pacman -Sy archlinux-keyring; anarchy
+```
+This is so I can connect to the internet from Wi-Fi enabled systems, make sure the time and date of the OS are correct (pacman fails to properly check the validity of packages if the package developers' GPG keys were "created too far in the future".)
+
+I am looking forward to fixing up this amazing software. :)
+
+**Froggo**
 
 # About
 
